@@ -19,13 +19,20 @@ plugins:
 - jemoji
 - jekyll-remote-theme
 
+# Gem settings
+title: 'AR PlayKit'
+twitter: 
+  username: 'gerald_kim'
+url: 'http://arplaykit.com'
+author: 'Gerald Kim'
+
 # Site settings
-url: 'https://mydomain.com'
+title: 'AR PlayKit'
+url: 'http://arplaykit.com'
 baseurl: ''
-title: 'My website'
-description: 'This is my new website'
+description: 'Playing around with ARKit'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: "/Resources/AR-icon.png"
 
 # Pagination
 paginate: 5
