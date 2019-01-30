@@ -42,7 +42,6 @@ paginate_path: blog/page:num
 navigation_header:
   Home: /
   About: /about/
-  Blog: /blog/
 
 # Footer nav
 navigation_footer:
