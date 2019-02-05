@@ -20,14 +20,14 @@ plugins:
 - jekyll-remote-theme
 
 # Gem settings
-title: 'AR PlayKit'
+title: 'AR Playkit'
 twitter: 
   username: 'gerald_kim'
 url: 'http://arplaykit.com'
 author: 'Gerald Kim'
 
 # Site settings
-title: 'AR PlayKit'
+title: 'Gerald Kim'
 url: 'http://arplaykit.com'
 baseurl: ''
 description: 'Playing around with ARKit'
@@ -53,6 +53,3 @@ collections:
     title: Posts
     output: true
     description: "My thoughts and ideas"
-    feature_text: |
-      Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
