@@ -1,0 +1,40 @@
+
+
+[
+  
+  
+    
+    
+      {
+        "title": "Hello World",
+        "excerpt": "My first post! I’m primarily a developer that works with UIKit in iOS and I would love to bring some of those elements into the 3D world that ARKit and SceneKit live in. Luckily, it’s not that hard! Introducing: UIViewControllerNode. It’s a pretty simple concept, it’s just a SCNNode subclass with a SCNPlane geometry that is textured with the UIViewController’s view.\n\nSee it on Github  github\n\n\nA few extra bits:\n\n  I added the option to have it billboarded so that the view is always visible\n  The viewController parameter in the init is there so the node will retain the viewController for you. As long as you add it as a child of something or retain it in some other way, the viewController sticks around too\n\n\nI’m pretty surprised on how interactions work out of the box, you can scroll the tableView in my sample app, even if there are multiple of them. Sometimes it’s a bit hard to scroll, I wonder if it’s my UITapGestureRecognizer interfering with things or something is up with the hit-testing\nI have a bunch of ideas on how to use this that I’ll be exploring in future posts. In the meantime, feel free to use it yourself!\n",
+        "content": "My first post! I’m primarily a developer that works with UIKit in iOS and I would love to bring some of those elements into the 3D world that ARKit and SceneKit live in. Luckily, it’s not that hard! Introducing: UIViewControllerNode. It’s a pretty simple concept, it’s just a SCNNode subclass with a SCNPlane geometry that is textured with the UIViewController’s view.\n\nSee it on Github  github\n\n\nA few extra bits:\n\n  I added the option to have it billboarded so that the view is always visible\n  The viewController parameter in the init is there so the node will retain the viewController for you. As long as you add it as a child of something or retain it in some other way, the viewController sticks around too\n\n\nI’m pretty surprised on how interactions work out of the box, you can scroll the tableView in my sample app, even if there are multiple of them. Sometimes it’s a bit hard to scroll, I wonder if it’s my UITapGestureRecognizer interfering with things or something is up with the hit-testing\nI have a bunch of ideas on how to use this that I’ll be exploring in future posts. In the meantime, feel free to use it yourself!\n",
+        "url": "/tools/2019/02/05/hello-world/"
+      },
+    
+      {
+        "title": "A Carousel of Textures",
+        "excerpt": "While working on other things, I discovered how performant it was to switch textures on an SCNNode. What if I could switch textures quickly, like at the speed of scroll?\n",
+        "content": "While working on other things, I discovered how performant it was to switch textures on an SCNNode. What if I could switch textures quickly, like at the speed of scroll? And thus, ARPKCarousel was born. \nspoiler: it’s plenty fast in a scrollview\n\n\n\nSee it on Github  github\n\n\nI like working with usdz files so I grabbed one off Apple’s QuickLook Gallery and chucked it into a SCNView. Then underneath, I have a UICollectionView and the gist of it is whatever is at index 0 is the texture of the model. I added a few quality of life tweaks:\n\n  the SCNView is placed to hide the ‘active’ texture cell but not the label so you can get some context\n  The UICollectionView has a large right contentInset to make sure the last cell can fit underneath slot 0\n  I used a subclass of UICollectionViewFlowLayout to get the cells to snap to position 0 nicely (thanks to this SO post https://stackoverflow.com/a/49617263)\n\n\nThere could be a lot of other cool things to make this more useable but I’d like to move onto experiments on how this works in AR in future posts\n",
+        "url": "/experiments/2019/02/13/3D-carousel/"
+      },
+    
+      {
+        "title": "A Failed Experiment with a Carousel",
+        "excerpt": "When trying to make an inline configuration carousel, I realized while it’s a great idea in a UIView, it’s a dumb idea in AR\n",
+        "content": "When trying to make an inline configuration carousel, I realized while it’s a great idea in a UIView, it’s a dumb idea in AR.\n\nSo I was trying to recreate the experience in my previous post in AR. I drew a crappy picture to show what I was trying to accomplish\n\n  \n  \n\n\nI realized that using the chair in the example would be very difficult as it’s a big chair and where would I put the carousel? That should have given me a clue, ugh. I swapped out the model with a vase given in Apple’s Quick Look gallery to try and make it a bit more manageable. I even implemented a custom UICollectionViewLayout to shrink non-focused cells (seen in the video below).\n\n\n\nAlas, as I struggled with it, I eventually came to the conclusion that this wasn’t going to work. Even with the shrinking cells, the carousel would need to be huge to fit the model. This is the vase on my desk in AR\n\n  \n  \n\n\nIn AR, realistic models like the chair and vase need to be real-world sizes and especially with a limited window of a phone screen, you can’t expect a user to wave their phone around to see that a model has a carousel to change its color. That field of view will get bigger with AR glasses/goggles but even then, what if you were looking at a car? (Excuse my terrible Photoshop skills)\n\n  \n  \n\n\nYour field of view would be about the green rectangle and the carousel could span the red rectangle on the ground. You can’t be expected to swivel your head to see all the options in the carousel, configurations like this should be easy to view so you can choose your option quickly\n\nI would still like to make a color picker ‘attached’ to the model in 3D space instead of a 2D collectionView stuck in a corner. Hopefully I can get it right in the next post\n",
+        "url": "/experiments/2019/03/18/failed-carousel-test/"
+      },
+    
+  
+  
+  
+  {
+    "title": "AR Playkit",
+    "excerpt": "\n",
+    "content": "Experimentations and tools for ARKit\n",
+    "url": "/"
+  }
+  
+]
+

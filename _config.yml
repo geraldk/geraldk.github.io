@@ -15,18 +15,12 @@ exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
-- alembic-jekyll-theme.gemspec
 
+remote_theme: daviddarnes/alembic@main
 # 2. Installed Gems
 plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
+- jekyll-remote-theme
 - jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-default-layout
-- jekyll-feed
-- jemoji
 
 # Gem settings
 title: 'AR Playkit'
@@ -38,14 +32,8 @@ author: 'Gerald Kim'
 # Site settings
 title: 'Gerald Kim'
 url: 'http://arplaykit.com'
-baseurl: ''
 description: 'Playing around with ARKit'
-permalink: pretty
 logo: "/Resources/AR-icon.png"
-
-# Pagination
-paginate: 5
-paginate_path: blog/page:num
 
 # 4. Jekyll settings
 sass:
