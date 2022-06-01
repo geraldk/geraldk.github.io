@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Subtitle Proof of Concept
+title: AR Translation Proof of Concept
 categories:
 - Experiments
 excerpt: |
@@ -22,7 +22,7 @@ So for this proof-of-concept, there are 3 main technologies in play: Speech Reco
 ### Speech Recognition
 ![Siri logo](/Resources/subtitle/Siri_logo.png)
 
-For speech recognition, I'm using the same tech that powers Siri on the phone. Apple provide a framework called `Speech`, which has been available since iOS 10 but in iOS13, we have the ability to do it all on device. I'm suprised at how quick it is, but as you can see, it sometimes has hiccups. If you want to get in-depth on it, I modified some code from one of Apple's sample apps [here](https://developer.apple.com/tutorials/app-dev-training/transcribing-speech-to-text) to do live transcribing of speech into text.
+For speech recognition, I'm using the same tech that powers Siri on the phone. Apple provide a framework called `Speech`, which has been available since iOS 10 but in iOS13, we have the ability to do it all on device. I'm surprised at how quick it is, but as you can see, it sometimes has hiccups. If you want to get in-depth on it, I modified some code from one of Apple's sample apps [here](https://developer.apple.com/tutorials/app-dev-training/transcribing-speech-to-text) to do live transcribing of speech into text.
 
 There are some smarts in this, you can see it trying to adjust the text as it thinks. But the smarts are limited, for example, it can't transcribe grammar. I'm cheating a little in adding stops at the end of pauses, if speaking is paused for 2 seconds, it will auto-add a period because I'm making an assumption that people will generally spit out sentences at a time before pausing. In order to add grammatical smarts, we'd have to train and add a machine learning model to recognize sentences. I can only imagine how difficult it must be to add commas and question marks.
 

@@ -30,8 +30,6 @@ url: 'http://arplaykit.com'
 author: 'Gerald Kim'
 
 # Site settings
-title: 'Gerald Kim'
-url: 'http://arplaykit.com'
 description: 'Playing around with ARKit'
 logo: "/Resources/AR-icon.png"
 
@@ -67,11 +65,11 @@ avatarurl: "/Resources/AR-icon.png" # Uses avatars for favicons to get multple s
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
-# 8. Site navigation
 navigation_header:
-  Home: /
-  About: /about/
-  Categories: /categories/
+- title: Home
+  url: /
+- title: About Me
+  url: /about/
 
 # Footer nav
 navigation_footer:
