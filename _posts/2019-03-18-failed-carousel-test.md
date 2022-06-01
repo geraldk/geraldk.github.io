@@ -11,7 +11,7 @@ feature_image: "/Resources/IMG_0351.jpg"
 When trying to make an inline configuration carousel, I realized while it's a great idea in a UIView, it's a dumb idea in AR.
 
 So I was trying to recreate the experience in my [previous post](https://arplaykit.com/experiments/2019/02/13/3D-carousel/) in AR. I drew a crappy picture to show what I was trying to accomplish
-{% include figure.html image="/Resources/IMG_0351.JPG" alt="Drawing of carousel under vase" %}
+{% include figure.html image="/Resources/IMG_0351.jpg" alt="Drawing of carousel under vase" %}
 I realized that using the chair in the example would be very difficult as it's a big chair and where would I put the carousel? That should have given me a clue, ugh. I swapped out the model with a vase given in [Apple's Quick Look gallery](https://developer.apple.com/arkit/gallery/) to try and make it a bit more manageable. I even implemented a custom UICollectionViewLayout to shrink non-focused cells (seen in the video below).
 
 <iframe width="640" height="564" src="https://player.vimeo.com/video/324952116" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
