@@ -23,6 +23,8 @@ plugins:
 - jekyll-seo-tag
 
 # Gem settings
+paginate: 4 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
 title: 'AR Playkit'
 twitter: 
   username: 'gerald_kim'
@@ -63,7 +65,7 @@ baseurl: ""
 avatarurl: "/Resources/AR-icon.png" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
 # google_analytics: ''
 # service_worker: false # Will turn off the service worker if set to false
-css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 navigation_header:
 - title: Home
@@ -92,3 +94,9 @@ sharing_links: # Appear at the bottom of single blog posts, uncomment and commen
   # Hacker News: "#ff6600"
   # Designer News: "#2D72D9"
   # Email: ""
+
+fonts:
+  preconnect_urls:
+    - https://fonts.gstatic.com
+  font_urls:
+    - https://fonts.googleapis.com/css2?family=Montserrat&display=swap

@@ -3,34 +3,32 @@ title: false
 styles: true
 ---
 // Background colours
-$backgroundColour: #1ba77e;
-// $codeBackgroundColour: #292A30;
-// $featureBackgroundColour: #636F83;
-// $accentColour: #5482FF;
+$backgroundColour: #1F1F24;
+$codeBackgroundColour: #292A30;
+$featureBackgroundColour: #636F83;
+$accentColour: #D0A8FF;
 
-// // Text colours
-// $headingColour: #9EF1DD;
-// $bodyColour: #FFFFFF;
-// $linkColour: #5482FF;
-// $hoverColour: #008000 !default;
-// $focusColour: #fa407a !default;
-// $captionColour: #a8adac !default;
+// Text colours
+$headingColour: #58637A;
+$bodyColour: #FFFFFF;
+$linkColour: #89B4F8;
+$hoverColour: #FFFFFF;
 // $white: #ffffff !default;
 
 // Typography
-// $bodytype: (
-//   font-family: '-apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
-//   regular: 400,
-//   bold: 700,
-//   italic: italic,
-//   cap-height: 0.75
-// );
+$bodytype: (
+  font-family: '-apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
+  regular: 400,
+  bold: 700,
+  italic: italic,
+  cap-height: 0.75
+);
 
-// $headingtype: (
-//   font-family: '"Montserrat", sans-serif',
-//   regular: 400,
-//   bold: 700,
-//   cap-height: 0.75
-// );
+$headingtype: (
+  font-family: '"Montserrat", sans-serif',
+  regular: 400,
+  bold: 700,
+  cap-height: 0.75
+);
 
 @import "alembic";
