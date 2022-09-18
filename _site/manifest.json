@@ -1,9 +1,0 @@
-{
-  "lang": "en-AU",
-  "name": "AR Playkit",
-  "short_name": "ARPlaykit",
-  "theme_color": "#24292e",
-  "background_color": "#ffffff",
-  "start_url": "/",
-  "display": "standalone"
-}

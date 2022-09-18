@@ -1,11 +1,7 @@
 ---
-layout: post
 title: AR Translation Proof of Concept
-categories:
-- Experiments
-excerpt: |
-    I made a proof of concept of live translating next to your face in AR
-feature_image: "/Resources/subtitle/GoogleIOAR.jpg"
+description: I made a proof of concept of live translating next to your face in AR
+featured_image: "/Resources/subtitle/GoogleIOAR.jpg"
 ---
 *Image credit Google*
 

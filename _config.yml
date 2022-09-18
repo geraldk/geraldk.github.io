@@ -1,14 +1,3 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
-
-# 1. Files excluded from Jekyll builds
 exclude:
 - README.md
 - LICENSE
@@ -16,87 +5,70 @@ exclude:
 - Gemfile
 - Gemfile.lock
 
-remote_theme: daviddarnes/alembic@main
-# 2. Installed Gems
-plugins:
-- jekyll-remote-theme
-- jekyll-seo-tag
+site: Reality Playgrounds
 
-# Gem settings
-paginate: 4 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
-title: 'AR Playkit'
-twitter: 
-  username: 'gerald_kim'
-url: 'http://arplaykit.com'
-author: 'Gerald Kim'
+url: 'http://realityplaygrounds.com'
+baseurl: 
 
 # Site settings
 description: 'Playing around with ARKit'
 logo: "/Resources/AR-icon.png"
 
-# 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Australia/Melbourne # Timezone for blog posts and alike
-
-# Collections
 collections:
-  posts:
-    title: Posts
+  pages:
     output: true
-    description: "My thoughts and ideas"
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
 
-# 6. Jekyll collections settings
 defaults:
   -
     scope:
       path: ""
     values:
-      image: "/assets/default-social-image.png" # Default image for sharing
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-lang: en-AU # Set the site language
-baseurl: ""
-# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
-avatarurl: "/Resources/AR-icon.png" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
-# google_analytics: ''
-# service_worker: false # Will turn off the service worker if set to false
-css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
-
-navigation_header:
-- title: Home
-  url: /
-- title: About Me
-  url: /about/
-
-# Footer nav
-navigation_footer:
-  Back to top: "#top"
-
+markdown: kramdown
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/gerald.kim
   LinkedIn: https://www.linkedin.com/in/geraldkim
   GitHub: https://github.com/geraldk
   RSS: /feed.xml
 
-sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
-  #Twitter: "#0d94e7"
-  #facebook: "#3B5998"
-  #Google+: "#DC4E41"
-  # Pinterest: "#BD081C"
-  # LinkedIn: "#0077B5"
-  # tumblr: "#36465D"
-  # Reddit: "#FF4500"
-  # Hacker News: "#ff6600"
-  # Designer News: "#2D72D9"
-  # Email: ""
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+  timezone: Australia/Melbourne # Timezone for blog posts and alike
 
-fonts:
-  preconnect_urls:
-    - https://fonts.gstatic.com
-  font_urls:
-    - https://fonts.googleapis.com/css2?family=Montserrat&display=swap
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+  

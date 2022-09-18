@@ -1,9 +1,6 @@
 ---
-layout: post
 title: Hello World
-categories:
-- Tools
-feature_image: "/Resources/Blog1-4.jpg"
+featured_image: "/Resources/Blog1-4.jpg"
 ---
 
 My first post! I'm primarily a developer that works with UIKit in iOS and I would love to bring some of those elements into the 3D world that ARKit and SceneKit live in. Luckily, it's not that hard! Introducing: `UIViewControllerNode`. It's a pretty simple concept, it's just a `SCNNode` subclass with a `SCNPlane` geometry that is textured with the `UIViewController`'s view. 

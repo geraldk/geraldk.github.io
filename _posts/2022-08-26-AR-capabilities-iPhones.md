@@ -1,11 +1,7 @@
 ---
-layout: post
 title: AR capabilities in iPhones
-categories:
-- Analysis
-excerpt: |
-    Comparing the AR capabilities of different iOS devices
-feature_image: "/Resources/iphones-ar/title.jpg"
+description: Comparing the AR capabilities of different iOS devices
+featured_image: "/Resources/iphones-ar/title.jpg"
 ---
 
 iPhones since the iPhone 6S are able to do Augmented Reality. That is 7 generations of iPhones up to the current date, each with different hardware capabilities that is able to do AR differently. On the upcoming iOS 16, we are also in the 6th iteration of ARKit: ARKit 6. With such a wide array of possibilities, I had a hard time finding which iPhone could do what. So today I wanted to break down what hardware is able to take advantages of what capabilities of ARKit. Most of this information is contained within the developer documentation for each capability, so I've tried to condense it into a quick chart.
@@ -63,6 +59,7 @@ I'll group these into different supported AR experiences: Plane detection, facia
 | Room scanning    | ❌ | ❌  | ❌ | ✅ |
 | Wall scanning  | ❌ | ❌  | ❌ | ✅ |
 | Geo Tracking    | ❌ | ✅* | ✅ | ✅ |
+
 _*: Needs a little more machine learning power so it needs a Neural Engine in A12 SoCs and newer. That excludes the iPhone 8, 8 Plus, and X._
 
 I added wall scanning, which probably ties in closely to Apple's decision to limit the new RoomScan feature in iOS16 to LiDAR devices. First of all, here's a video I made with my test devices:
